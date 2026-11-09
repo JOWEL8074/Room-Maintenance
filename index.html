@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Maintenance - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>Room Maintenance</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Report.html">Report</a>
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Room Maintenance</h1>
+        <h2 id="welcomeUser">Hello, Student!</h2>
+        <p>
+            A simple platform to report room problems
+            and manage maintenance services.
+        </p>
+        <a href="report.html" class="main-button">
+            Report a Problem
+        </a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h2>Report Problems</h2>
+            <p>Submit complaints about electrical,
+               plumbing and other room issues.</p>
+            <a href="report.html">Report Now</a>
+        </div>
+
+        <div class="feature-card">
+            <h2>Our Services</h2>
+            <p>Explore available room maintenance
+               and repair services.</p>
+            <a href="services.html">View Services</a>
+        </div>
+
+        <div class="feature-card">
+            <h2>Contact Us</h2>
+            <p>Contact the maintenance team
+               for assistance.</p>
+            <a href="contact.html">Contact Now</a>
+        </div>
+    </section>
+
+    <section class="dashboard">
+        <h2>Maintenance Dashboard</h2>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Total Reports</h3>
+                <p id="totalReports">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Pending Reports</h3>
+                <p id="pendingReports">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Completed Reports</h3>
+                <p id="completedReports">0</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Room Maintenance Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
