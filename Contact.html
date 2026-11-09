@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>Room Maintenance</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Report.html">Report</a>
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <section class="form-container">
+        <h1>Contact Us</h1>
+        <p>Have questions? Send us a message.</p>
+
+        <form id="contactForm">
+
+            <label>Your Name</label>
+            <input type="text" id="contactName" required>
+
+            <label>Email Address</label>
+            <input type="email" id="contactEmail" required>
+
+            <label>Subject</label>
+            <input type="text" id="subject" required>
+
+            <label>Your Message</label>
+            <textarea id="contactMessage"
+                      placeholder="Write your message..."
+                      required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="contactStatus"></p>
+    </section>
+
+    <section class="contact-info">
+        <h2>Maintenance Support</h2>
+        <p>Email: maintenance@example.com</p>
+        <p>Working Hours: Monday - Saturday</p>
+        <p>Support: Room Maintenance Department</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Room Maintenance Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
